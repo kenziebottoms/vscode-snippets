@@ -10,14 +10,14 @@
 		"prefix": "router",
 		"body": [
 			"angular.module(\"${1:AppName}\", [\"ngRoute\"])",
-			"\t.config($routeProvider => {",
-			"\t\t$routeProvider",
+			"\t.config(\\$routeProvider => {",
+			"\t\t\\$routeProvider",
 			"\t\t\t.when(\"${2:path}\", {",
-			"\t\t\t\ttemplateUrl: \"${3:partialPath}\"",
+			"\t\t\t\ttemplateUrl: \"${3:partialPath}\",",
 			"\t\t\t\tcontroller: \"${4:ctrlPath}\"",
             "\t\t\t})",
             "\t\t\t.otherwise(\"${5:otherwisePath}\");",
-    		"\t\t\t);"
+    		"});"
 		]
 	}
 }
