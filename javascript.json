@@ -19,5 +19,12 @@
             "\t\t\t.otherwise(\"${5:otherwisePath}\");",
     		"});"
 		]
+	},
+	"Angular controller": {
+		"prefix": "ngController",
+		"body": [
+			"angular.module(\"${1:AppName}\").controller(\"${2:Ctrl}\", function(\\$scope) {",
+			"});"
+		]
 	}
 }
