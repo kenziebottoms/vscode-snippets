@@ -26,5 +26,18 @@
 			"angular.module(\"${1:AppName}\").controller(\"${2:Ctrl}\", function(\\$scope) {",
 			"});"
 		]
+	},
+	"Angular factory": {
+		"prefix": "factory",
+		"body": [
+			"angular.module(\"${1:AppName}\").factory(\"${2:Factory}\", function(\\$q, \\$http) {",
+			"});"
+		]
+	},
+	"Use strict": {
+		"prefix": "use",
+		"body": [
+			"\"use strict\";"
+		]
 	}
 }
