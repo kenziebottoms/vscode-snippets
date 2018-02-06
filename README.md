@@ -19,3 +19,17 @@
                 .otherwise("#");
     });
     ```
+- `factory`
+    ```js
+    angular.module("#").factory("#", function($q, $http) {
+    });
+    ```
+- `ngController`
+    ```js
+    angular.module("#").controller("#", function($scope) {
+    });
+    ```
+- `use`
+    ```js
+    "use strict;"
+    ```
