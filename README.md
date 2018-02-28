@@ -33,3 +33,10 @@
     ```js
     "use strict;"
     ```
+
+### CSS/SCSS
+
+- `bb`
+    ```css
+    box-sizing: border-box;
+    ```
