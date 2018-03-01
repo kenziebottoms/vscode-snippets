@@ -1,8 +1,8 @@
 {
 	"Print to console": {
-		"prefix": "clog",
+		"prefix": "cl",
 		"body": [
-			"console.log(\"$1\");"
+			"console.log($1);"
 		]
 	},
 	"Angular router": {
@@ -22,33 +22,46 @@
 	"Angular controller": {
 		"prefix": "ngController",
 		"body": [
-			"angular.module(\"${1:AppName}\").controller(\"${2:Ctrl}\", function(\\$scope) {",
+			"angular.module(\"${1:AppName}\").controller(\"$2Ctrl\", function(\\$scope) {",
+			"\t$3"
 			"});"
 		]
 	},
 	"Angular factory": {
 		"prefix": "factory",
 		"body": [
-			"angular.module(\"${1:AppName}\").factory(\"${2:Factory}\", function(\\$q, \\$http) {",
+			"angular.module(\"${1:AppName}\").factory(\"$2Factory\", function(\\$q, \\$http) {",
+			"\t$3",
 			"});"
 		]
 	},
 	"Use strict": {
 		"prefix": "use",
 		"body": [
-			"\"use strict\";"
+			"\"use strict\";",
+			"\n"
 		]
 	},
 	"return $q": { 
 		"prefix": "rq",
 		"body": [
 			"return \\$q((resolve, reject) => {",
-			"\t",
+			"\t$1",
 			"});"
 		]
 	},
 	"Direct execution": {
 		"prefix": "dx",
 		"body": "#!/usr/bin/env node"
+	},
+	"Try/catch" : {
+		"prefix": "tc",
+		"body": [
+			"try {",
+			"\t$1",
+			"} catch(err) {",
+			"\tconsole.log(\"Error\", err);",
+			"}"
+		]
 	}
 }

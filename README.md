@@ -1,8 +1,23 @@
+### CSS/SCSS
+
+- `bb`
+    ```css
+    box-sizing: border-box;
+    ```
+
 ### Javascript
 
-- `log`
+- `cl`
     ```js
-    console.log("#");
+    console.log(#);
+    ```
+- `use`
+    ```js
+    "use strict;"
+    ```
+- `dx`
+    ```js
+    #!/usr/bin/env node
     ```
 
 #### Angular
@@ -21,26 +36,11 @@
     ```
 - `factory`
     ```js
-    angular.module("#").factory("#", function($q, $http) {
+    angular.module("#").factory("#Factory", function($q, $http) {
     });
     ```
 - `ngController`
     ```js
-    angular.module("#").controller("#", function($scope) {
+    angular.module("#").controller("#Ctrl", function($scope) {
     });
-    ```
-- `use`
-    ```js
-    "use strict;"
-    ```
-- `dx`
-    ```js
-    #!/usr/bin/env node
-    ```
-
-### CSS/SCSS
-
-- `bb`
-    ```css
-    box-sizing: border-box;
     ```
