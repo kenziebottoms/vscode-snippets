@@ -33,6 +33,10 @@
     ```js
     "use strict;"
     ```
+- `dx`
+    ```js
+    #!/usr/bin/env node
+    ```
 
 ### CSS/SCSS
 
