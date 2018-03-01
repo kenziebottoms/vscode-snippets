@@ -15,10 +15,6 @@
     ```js
     "use strict;"
     ```
-- `dx`
-    ```js
-    #!/usr/bin/env node
-    ```
 
 #### Angular
 
@@ -43,4 +39,14 @@
     ```js
     angular.module("#").controller("#Ctrl", function($scope) {
     });
+    ```
+
+#### Node
+- `dx`
+    ```js
+    #!/usr/bin/env node
+    ```
+- `pe`
+    ```js
+    process.exit();
     ```

@@ -23,7 +23,7 @@
 		"prefix": "ngController",
 		"body": [
 			"angular.module(\"${1:AppName}\").controller(\"$2Ctrl\", function(\\$scope) {",
-			"\t$3"
+			"\t$3",
 			"});"
 		]
 	},
@@ -62,6 +62,12 @@
 			"} catch(err) {",
 			"\tconsole.log(\"Error\", err);",
 			"}"
+		]
+	},
+	"Process exit": {
+		"prefix": "pe",
+		"body": [
+			"process.exit();"
 		]
 	}
 }
