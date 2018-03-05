@@ -15,6 +15,15 @@
     ```js
     "use strict;"
     ```
+- `s3`
+    ```js
+    sqlite3
+    ```
+- `rp`
+    ```js
+    return new Promise((resolve, reject) => {
+    });
+    ```
 
 #### Angular
 
