@@ -27,18 +27,11 @@
 
 #### Angular
 
-- `router`
+- `rq`
     ```js
-    angular.module("#", ["ngRoute"])
-        .config($routeProvider => {
-            $routeProvider
-                .when("#", {
-                    templateUrl: "#",
-                    controller: "#"
-                })
-                .otherwise("#");
+    return $q((resolve, reject) => {
     });
-    ```
+
 - `factory`
     ```js
     angular.module("#").factory("#Factory", function($q, $http) {
@@ -49,6 +42,18 @@
     angular.module("#").controller("#Ctrl", function($scope) {
     });
     ```
+- `router` (`ngRoute`)
+    ```js
+    angular.module("#", ["ngRoute"])
+        .config($routeProvider => {
+            $routeProvider
+                .when("#", {
+                    templateUrl: "#",
+                    controller: "#"
+                })
+                .otherwise("#");
+    });
+        ```
 
 #### Node
 - `dx`
