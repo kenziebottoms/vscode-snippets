@@ -64,10 +64,23 @@
     ```js
     process.exit();
     ```
-- `desc`
+- `di`
     ```js
     describe("#", () => {
         it("#", () => {
         });
     });
+    ```
+- `ddi`
+    ```js
+    describe("#", () => {
+        describe("#", () => {
+            it("#", () => {
+            });
+        });
+    });
+    ```
+- `ca`
+    ```js
+    const { assert } = require("chai");
     ```

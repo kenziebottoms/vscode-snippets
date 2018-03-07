@@ -84,14 +84,32 @@
 			"});"
 		]
 	},
+	"nested describe block": {
+		"prefix": "ddi",
+		"body": [
+			"describe(\"$1\", () => {",
+			"\tdescribe(\"$2\", () => {",
+			"\t\tit(\"$3\", () => {",
+			"\t\t\t$4",
+			"\t\t});",
+			"\t});",
+			"});"
+		]
+	},
 	"describe block": {
-		"prefix": "desc",
+		"prefix": "di",
 		"body": [
 			"describe(\"$1\", () => {",
 			"\tit(\"$2\", () => {",
 			"\t\t$3",
 			"\t});",
 			"});"
+		]
+	},
+	"require chai": {
+		"prefix": "ca",
+		"body": [
+			"const { assert } = require(\"chai\");\n"
 		]
 	}
 }
