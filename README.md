@@ -84,10 +84,11 @@
     ```js
     const { assert } = require("chai");
     ```
-- `ns`
+- `rs`
     ```js
     const sqlite3 = require("sqlite3").verbose();
-
-    new sqlite3.Database("#.sqlite", () => {
-    });
+    ```
+- `ns`
+    ```js
+    const db = new sqlite3.Database("#.sqlite");
     ```
