@@ -80,7 +80,14 @@
         });
     });
     ```
-- `ca`
+- `ch`
     ```js
     const { assert } = require("chai");
+    ```
+- `ns`
+    ```js
+    const sqlite3 = require("sqlite3").verbose();
+
+    new sqlite3.Database("#.sqlite", () => {
+    });
     ```

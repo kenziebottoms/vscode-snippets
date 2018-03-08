@@ -107,9 +107,18 @@
 		]
 	},
 	"require chai": {
-		"prefix": "ca",
+		"prefix": "ch",
 		"body": [
 			"const { assert } = require(\"chai\");\n"
+		]
+	},
+	"new sqlite3 database": {
+		"prefix": "ns",
+		"body": [
+			"const sqlite3 = require(\"sqlite3\").verbose();\n",
+			"new sqlite3.Database(\"$1.sqlite\", () => {",
+			"\t$2",
+			"});"
 		]
 	}
 }
