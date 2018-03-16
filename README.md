@@ -1,3 +1,13 @@
+<!-- TOC -->
+
+- [CSS/SCSS](#cssscss)
+- [Javascript](#javascript)
+    - [Angular](#angular)
+    - [Node](#node)
+- [Markdown](#markdown)
+
+<!-- /TOC -->
+
 ### CSS/SCSS
 
 - `bb`
@@ -91,4 +101,11 @@
 - `ns`
     ```js
     const db = new sqlite3.Database("#.sqlite");
+    ```
+
+### Markdown
+
+- `badge`
+    ```md
+    https://img.shields.io/badge/#-#-#.svg
     ```

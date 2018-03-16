@@ -1,0 +1,6 @@
+{
+	"badge image": {
+		"prefix": "badge",
+		"body": "![](https://img.shields.io/badge/${1:label}-${2:value}-${3:color}.svg)"
+	}
+}
