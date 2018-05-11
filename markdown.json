@@ -14,5 +14,9 @@
 	"Materialize badge": {
 		"prefix": "materialize",
 		"body": "![](https://img.shields.io/badge/css_framework-materialize-F95972.svg)"
+	},
+	"Sass badge": {
+		"prefix": "sass",
+		"body": "![](https://img.shields.io/badge/css_preprocessor-sass-DC4497.svg)"
 	}
 }
