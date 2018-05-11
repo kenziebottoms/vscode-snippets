@@ -8,21 +8,21 @@
 	"Angular router": {
 		"prefix": "router",
 		"body": [
-			"angular.module(\"${1:AppName}\", [\"ngRoute\"])",
+			"angular.module('${1:AppName}', ['ngRoute'])",
 			"\t.config(\\$routeProvider => {",
 			"\t\t\\$routeProvider",
-			"\t\t\t.when(\"${2:path}\", {",
-			"\t\t\t\ttemplateUrl: \"${3:partialPath}\",",
-			"\t\t\t\tcontroller: \"${4:ctrlPath}\"",
+			"\t\t\t.when('${2:path}', {",
+			"\t\t\t\ttemplateUrl: '${3:partialPath}',",
+			"\t\t\t\tcontroller: '${4:ctrlPath}'",
             "\t\t\t})",
-            "\t\t\t.otherwise(\"${5:otherwisePath}\");",
+            "\t\t\t.otherwise('${5:otherwisePath}');",
     		"});"
 		]
 	},
 	"Angular controller": {
 		"prefix": "ngController",
 		"body": [
-			"angular.module(\"${1:AppName}\").controller(\"$2Ctrl\", function(\\$scope) {",
+			"angular.module('${1:AppName}').controller('$2Ctrl', function(\\$scope) {",
 			"\t$3",
 			"});"
 		]
@@ -30,7 +30,7 @@
 	"Angular factory": {
 		"prefix": "factory",
 		"body": [
-			"angular.module(\"${1:AppName}\").factory(\"$2Factory\", function(\\$q, \\$http) {",
+			"angular.module('${1:AppName}').factory('$2Factory', function(\\$q, \\$http) {",
 			"\t$3",
 			"});"
 		]
@@ -38,7 +38,7 @@
 	"Use strict": {
 		"prefix": "use",
 		"body": [
-			"\"use strict\";",
+			"'use strict';",
 			"\n"
 		]
 	},
@@ -60,7 +60,7 @@
 			"try {",
 			"\t$1",
 			"} catch(err) {",
-			"\tconsole.log(\"Error\", err);",
+			"\tconsole.log('Error', err);",
 			"}"
 		]
 	},
@@ -87,9 +87,9 @@
 	"nested describe block": {
 		"prefix": "ddi",
 		"body": [
-			"describe(\"$1\", () => {",
-			"\tdescribe(\"$2\", () => {",
-			"\t\tit(\"$3\", () => {",
+			"describe('$1', () => {",
+			"\tdescribe('$2', () => {",
+			"\t\tit('$3', () => {",
 			"\t\t\t$4",
 			"\t\t});",
 			"\t});",
@@ -99,29 +99,37 @@
 	"describe block": {
 		"prefix": "di",
 		"body": [
-			"describe(\"$1\", () => {",
-			"\tit(\"$2\", () => {",
+			"describe('$1', () => {",
+			"\tit('$2', () => {",
 			"\t\t$3",
 			"\t});",
+			"});"
+		]
+	},
+	"it block": {
+		"prefix": "it",
+		"body": [
+			"it('$1', () => {",
+			"\t$2",
 			"});"
 		]
 	},
 	"require chai": {
 		"prefix": "ch",
 		"body": [
-			"const { assert } = require(\"chai\");\n"
+			"const { assert } = require('chai');\n"
 		]
 	},
 	"require sqlite3": {
 		"prefix": "rs",
 		"body": [
-			"const sqlite3 = require(\"sqlite3\").verbose();\n"
+			"const sqlite3 = require('sqlite3').verbose();\n"
 		]
 	},
 	"new sqlite3 database": {
 		"prefix": "ns",
 		"body": [
-			"const db = new sqlite3.Database(\"$1.sqlite\");"
+			"const db = new sqlite3.Database('$1.sqlite');"
 		]
 	}
 }

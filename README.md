@@ -1,18 +1,22 @@
 <!-- TOC -->
 
-- [CSS/SCSS](#cssscss)
+- [CSS/SCSS/SASS](#cssscsssass)
 - [Javascript](#javascript)
-    - [Angular](#angular)
-    - [Node](#node)
+  - [Angular](#angular)
+  - [Node](#node)
 - [Markdown](#markdown)
 
 <!-- /TOC -->
 
-### CSS/SCSS
+### CSS/SCSS/SASS
 
 - `bb`
     ```css
     box-sizing: border-box;
+    ```
+    
+    ```sass
+    box-sizing: border-box
     ```
 
 ### Javascript
@@ -23,7 +27,7 @@
     ```
 - `use`
     ```js
-    "use strict;"
+    'use strict;'
     ```
 - `s3`
     ```js
@@ -44,24 +48,24 @@
 
 - `factory`
     ```js
-    angular.module("#").factory("#Factory", function($q, $http) {
+    angular.module('#').factory('#Factory', function($q, $http) {
     });
     ```
 - `ngController`
     ```js
-    angular.module("#").controller("#Ctrl", function($scope) {
+    angular.module('#').controller('#Ctrl', function($scope) {
     });
     ```
 - `router` (`ngRoute`)
     ```js
-    angular.module("#", ["ngRoute"])
+    angular.module('#', ['ngRoute'])
         .config($routeProvider => {
             $routeProvider
-                .when("#", {
-                    templateUrl: "#",
-                    controller: "#"
+                .when('#', {
+                    templateUrl: '#',
+                    controller: '#'
                 })
-                .otherwise("#");
+                .otherwise('#');
     });
     ```
 
@@ -76,36 +80,47 @@
     ```
 - `di`
     ```js
-    describe("#", () => {
-        it("#", () => {
+    describe('#', () => {
+        it('#', () => {
         });
     });
     ```
 - `ddi`
     ```js
-    describe("#", () => {
-        describe("#", () => {
-            it("#", () => {
+    describe('#', () => {
+        describe('#', () => {
+            it('#', () => {
             });
         });
     });
     ```
 - `ch`
     ```js
-    const { assert } = require("chai");
+    const { assert } = require('chai');
     ```
 - `rs`
     ```js
-    const sqlite3 = require("sqlite3").verbose();
+    const sqlite3 = require('sqlite3').verbose();
     ```
 - `ns`
     ```js
-    const db = new sqlite3.Database("#.sqlite");
+    const db = new sqlite3.Database('#.sqlite');
     ```
 
 ### Markdown
 
 - `badge`
     ```md
-    https://img.shields.io/badge/#-#-#.svg
+    ![](https://img.shields.io/badge/#-#-#.svg)
     ```
+    - `materialize`
+
+        ![](https://img.shields.io/badge/css_framework-materialize-F95972.svg)
+        
+    - `nodejs`
+        
+        ![](https://img.shields.io/badge/modularity-node-61BC62.svg)
+        
+    - `bs`
+        
+        ![](https://img.shields.io/badge/css_framework-bootstrap-5F2C7C.svg)

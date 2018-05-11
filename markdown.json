@@ -2,5 +2,17 @@
 	"badge image": {
 		"prefix": "badge",
 		"body": "![](https://img.shields.io/badge/${1:label}-${2:value}-${3:color}.svg)"
+	},
+	"Boostrap badge": {
+		"prefix": "bs",
+		"body": "![](https://img.shields.io/badge/css_framework-bootstrap-5F2C7C.svg)"
+	},
+	"Nodejs badge": {
+		"prefix": "node",
+		"body": "![](https://img.shields.io/badge/modularity-node-61BC62.svg)"
+	},
+	"Materialize badge": {
+		"prefix": "materialize",
+		"body": "![](https://img.shields.io/badge/css_framework-materialize-F95972.svg)"
 	}
 }

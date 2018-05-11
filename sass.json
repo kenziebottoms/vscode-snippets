@@ -1,0 +1,6 @@
+{
+	"Border-box": {
+		"prefix": "bb",
+		"body": "box-sizing: border-box"
+	}
+}
