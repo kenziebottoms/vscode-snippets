@@ -129,3 +129,7 @@
     - `sass`
 
         ![](https://img.shields.io/badge/css_preprocessor-sass-DC4497.svg)
+
+    - `postgres`
+
+        ![](https://img.shields.io/badge/data-postgres-316391.svg)

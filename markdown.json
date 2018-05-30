@@ -18,5 +18,9 @@
 	"Sass badge": {
 		"prefix": "sass",
 		"body": "![](https://img.shields.io/badge/css_preprocessor-sass-DC4497.svg)"
+	},
+	"Postgres badge": {
+		"prefix": "pg",
+		"body": "![](https://img.shields.io/badge/data-postgres-316391.svg)"
 	}
 }
