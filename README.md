@@ -133,3 +133,11 @@
     - `postgres`
 
         ![](https://img.shields.io/badge/data-postgres-316391.svg)
+
+    - `lodash`
+    
+        ![](https://img.shields.io/badge/js_anaesthetic-lodash-3554FF.svg)
+
+    - `angular`
+    
+        ![](https://img.shields.io/badge/framework-angularjs-D00027.svg)

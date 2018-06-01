@@ -22,5 +22,14 @@
 	"Postgres badge": {
 		"prefix": "pg",
 		"body": "![](https://img.shields.io/badge/data-postgres-316391.svg)"
+	},
+	"Lodash badge": {
+		"prefix": "lo",
+		"body": "![](https://img.shields.io/badge/lodash-v4.17.10-3554FF.svg)"
+	},
+	"AngularJS badge": {
+		"prefix": "ng",
+		"body": "
+		![](https://img.shields.io/badge/framework-angularjs-D00027.svg)"
 	}
 }
