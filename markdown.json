@@ -34,5 +34,13 @@
 	"jQuery badge": {
 		"prefix": "jq",
 		"body": "![](https://img.shields.io/badge/jquery-v$1-005FAD.svg)"
+	},
+	"Handlebars badge": {
+		"prefix": "hb",
+		"body": "![](https://img.shields.io/badge/handlebars-version-F47904.svg)"
+	},
+	"Grunt badge": {
+		"prefix": "gr",
+		"body": "![](https://img.shields.io/badge/grunt-version-ED8024.svg)"
 	}
 }

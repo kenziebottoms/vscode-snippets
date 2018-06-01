@@ -133,3 +133,11 @@
     - `angular`
         
         ![](https://img.shields.io/badge/angularJS-version-D00027.svg)
+    
+    - `grunt`
+
+        ![](https://img.shields.io/badge/grunt-version-ED8024.svg)
+
+    - `handlebars`
+
+        ![](https://img.shields.io/badge/handlebars-version-F47904.svg)
