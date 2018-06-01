@@ -29,10 +29,6 @@
     ```js
     'use strict;'
     ```
-- `s3`
-    ```js
-    sqlite3
-    ```
 - `rp`
     ```js
     return new Promise((resolve, reject) => {
@@ -98,14 +94,6 @@
     ```js
     const { assert } = require('chai');
     ```
-- `rs`
-    ```js
-    const sqlite3 = require('sqlite3').verbose();
-    ```
-- `ns`
-    ```js
-    const db = new sqlite3.Database('#.sqlite');
-    ```
 
 ### Markdown
 
@@ -116,15 +104,11 @@
     
     - `bs`
         
-        ![](https://img.shields.io/badge/css_framework-bootstrap-5F2C7C.svg)
+        ![](https://img.shields.io/badge/css-bootstrap-5F2C7C.svg)
 
     - `materialize`
 
-        ![](https://img.shields.io/badge/css_framework-materialize-F95972.svg)
-        
-    - `nodejs`
-        
-        ![](https://img.shields.io/badge/modularity-node-61BC62.svg)
+        ![](https://img.shields.io/badge/css-materialize-F95972.svg)
 
     - `sass`
 
@@ -133,11 +117,15 @@
     - `postgres`
 
         ![](https://img.shields.io/badge/data-postgres-316391.svg)
+        
+    - `node`
+        
+        ![](https://img.shields.io/badge/node-version-61BC62.svg)
 
     - `lodash`
-    
-        ![](https://img.shields.io/badge/js_anaesthetic-lodash-3554FF.svg)
+        
+        ![](https://img.shields.io/badge/lodash-version-3554FF.svg)
 
     - `angular`
-    
-        ![](https://img.shields.io/badge/framework-angularjs-D00027.svg)
+        
+        ![](https://img.shields.io/badge/angularJS-version-D00027.svg)

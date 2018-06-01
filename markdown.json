@@ -5,15 +5,15 @@
 	},
 	"Boostrap badge": {
 		"prefix": "bs",
-		"body": "![](https://img.shields.io/badge/css_framework-bootstrap-5F2C7C.svg)"
+		"body": "![](https://img.shields.io/badge/css-bootstrap-5F2C7C.svg)"
 	},
 	"Nodejs badge": {
 		"prefix": "node",
-		"body": "![](https://img.shields.io/badge/modularity-node-61BC62.svg)"
+		"body": "![](https://img.shields.io/badge/node-v$1-61BC62.svg)"
 	},
 	"Materialize badge": {
 		"prefix": "materialize",
-		"body": "![](https://img.shields.io/badge/css_framework-materialize-F95972.svg)"
+		"body": "![](https://img.shields.io/badge/css-materialize-F95972.svg)"
 	},
 	"Sass badge": {
 		"prefix": "sass",
@@ -25,11 +25,10 @@
 	},
 	"Lodash badge": {
 		"prefix": "lo",
-		"body": "![](https://img.shields.io/badge/lodash-v4.17.10-3554FF.svg)"
+		"body": "![](https://img.shields.io/badge/lodash-v$1-3554FF.svg)"
 	},
 	"AngularJS badge": {
 		"prefix": "ng",
-		"body": "
-		![](https://img.shields.io/badge/framework-angularjs-D00027.svg)"
+		"body": "![](https://img.shields.io/badge/angularJS-v$1-D00027.svg)"
 	}
 }
