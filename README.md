@@ -117,6 +117,10 @@
     - `postgres`
 
         ![](https://img.shields.io/badge/data-postgres-316391.svg)
+
+    - `jquery`
+
+        ![](https://img.shields.io/badge/jquery-version-005FAD.svg)
         
     - `node`
         
