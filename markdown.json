@@ -37,10 +37,10 @@
 	},
 	"Handlebars badge": {
 		"prefix": "hb",
-		"body": "![](https://img.shields.io/badge/handlebars-version-F47904.svg)"
+		"body": "![](https://img.shields.io/badge/handlebars-v$1-F47904.svg)"
 	},
 	"Grunt badge": {
 		"prefix": "gr",
-		"body": "![](https://img.shields.io/badge/grunt-version-ED8024.svg)"
+		"body": "![](https://img.shields.io/badge/grunt-v$1-ED8024.svg)"
 	}
 }
