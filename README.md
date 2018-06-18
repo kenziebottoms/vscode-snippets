@@ -114,11 +114,11 @@
 
         ![](https://img.shields.io/badge/css_preprocessor-sass-DC4497.svg)
 
-    - `postgres`
+    - `pg`
 
         ![](https://img.shields.io/badge/data-postgres-316391.svg)
 
-    - `jquery`
+    - `jq`
 
         ![](https://img.shields.io/badge/jquery-version-005FAD.svg)
         
@@ -126,18 +126,22 @@
         
         ![](https://img.shields.io/badge/node-version-61BC62.svg)
 
-    - `lodash`
+    - `lo`
         
         ![](https://img.shields.io/badge/lodash-version-3554FF.svg)
 
-    - `angular`
+    - `ng`
         
         ![](https://img.shields.io/badge/angularJS-version-D00027.svg)
     
-    - `grunt`
+    - `gr`
 
         ![](https://img.shields.io/badge/grunt-version-ED8024.svg)
 
-    - `handlebars`
+    - `hb`
 
         ![](https://img.shields.io/badge/handlebars-version-F47904.svg)
+    
+    - `ch`
+
+        ![](https://img.shields.io/badge/testing-chai+mocha-a40802.svg)

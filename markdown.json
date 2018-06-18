@@ -42,5 +42,9 @@
 	"Grunt badge": {
 		"prefix": "gr",
 		"body": "![](https://img.shields.io/badge/grunt-v$1-ED8024.svg)"
+	},
+	"Chai+mocha badge": {
+		"prefix": "ch",
+		"body": "![](https://img.shields.io/badge/testing-chai+mocha-a40802.svg)"
 	}
 }
