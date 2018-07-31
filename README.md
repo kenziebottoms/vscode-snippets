@@ -145,3 +145,12 @@
     - `ch`
 
         ![](https://img.shields.io/badge/testing-chai+mocha-a40802.svg)
+
+### Java
+
+- `main`
+    ```
+    public static void main(String[] args) {
+        
+    }
+    ```
