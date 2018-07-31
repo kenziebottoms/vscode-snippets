@@ -19,5 +19,11 @@
 				"\t$1",
 			"}"
 		]
+	},
+	"out": {
+		"prefix": "out",
+		"body": [
+			"System.out.println($1);"
+		]
 	}
 }

@@ -149,8 +149,13 @@
 ### Java
 
 - `main`
-    ```
+    ```java
     public static void main(String[] args) {
-        
+        #
     }
+    ```
+
+- `out`
+    ```java
+    System.out.println(#);
     ```
