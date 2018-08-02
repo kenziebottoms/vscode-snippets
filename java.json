@@ -25,5 +25,11 @@
 		"body": [
 			"System.out.println($1);"
 		]
+	},
+	"BigInteger": {
+		"prefix": "bigint",
+		"body": [
+			"BigInteger"
+		]
 	}
 }
