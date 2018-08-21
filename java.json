@@ -31,5 +31,32 @@
 		"body": [
 			"BigInteger"
 		]
+	},
+	"mockMvc test": {
+		"prefix": "mmtest",
+		"body": [
+			"@Test",
+			"public void test_$1_expect$2() throws Exception {"
+				"\tmockMvc.perform(",
+					"\t\t$3(\"/$4\")",
+						"\t\t\t.contentType(MediaType.APPLICATION_JSON_UTF8)",
+				"\t)",
+					"\t\t.andExpect(status().$5());",
+			"}"
+		]
+	},
+	"mockMvc test with content": {
+		"prefix": "mmcont",
+		"body": [
+			"@Test",
+			"public void test_$1_expect$2() throws Exception {",
+				"\tmockMvc.perform(",
+					"\t\t$3(\"/$4\")",
+						"\t\t\t.contentType(MediaType.APPLICATION_JSON_UTF8)",
+						"\t\t\t.content(TestData.$5)",
+				"\t)",
+					"\t\t.andExpect(status().$6());",
+			"}"
+		]
 	}
 }

@@ -5,6 +5,7 @@
   - [Angular](#angular)
   - [Node](#node)
 - [Markdown](#markdown)
+- [Java](#java)
 
 <!-- /TOC -->
 
@@ -163,4 +164,29 @@
 - `bi`
     ```java
     BigInteger
+    ```
+
+- `mmtest`
+    ```java
+	@Test
+	public void test_#_expect#() throws Exception {
+	    mockMvc.perform(
+            #("/#")
+                .contentType(MediaType.APPLICATION_JSON_UTF8)
+		)
+            .andExpect(status().#());
+	}
+    ```
+
+- `mmcont`
+    ```java
+	@Test
+	public void test_#_expect#() throws Exception {
+        mockMvc.perform(
+            #("/#")
+                .contentType(MediaType.APPLICATION_JSON_UTF8)
+                .content(#)
+        )
+            .andExpect(status().#());
+	}
     ```
