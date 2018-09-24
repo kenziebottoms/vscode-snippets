@@ -58,5 +58,13 @@
 					"\t\t.andExpect(status().$6());",
 			"}"
 		]
+	},
+	"public static final": {
+		"prefix": "psf",
+		"body": "public static final "
+	},
+	"public void": {
+		"prefix": "pv",
+		"body": "public void "
 	}
 }

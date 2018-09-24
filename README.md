@@ -178,15 +178,12 @@
 	}
     ```
 
-- `mmcont`
+- `psf`
     ```java
-	@Test
-	public void test_#_expect#() throws Exception {
-        mockMvc.perform(
-            #("/#")
-                .contentType(MediaType.APPLICATION_JSON_UTF8)
-                .content(#)
-        )
-            .andExpect(status().#());
-	}
+    public static final
+    ```
+
+- `pv`
+    ```java
+    public void 
     ```
