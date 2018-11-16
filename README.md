@@ -96,6 +96,13 @@
     const { assert } = require('chai');
     ```
 
+#### Vue
+- `sc`
+    ```html
+    <script>
+    </script>
+    ```
+
 ### Markdown
 
 - `badge`
