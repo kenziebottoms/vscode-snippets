@@ -1,0 +1,10 @@
+{
+	"Script tag": {
+		"prefix": "sc",
+		"body": [
+			"<script>",
+				"\t$",
+			"</script>"
+		]
+	},
+}
