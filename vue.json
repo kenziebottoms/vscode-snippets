@@ -3,8 +3,16 @@
 		"prefix": "sc",
 		"body": [
 			"<script>",
-				"\t$",
+				"\t$1",
 			"</script>"
 		]
 	},
+	"Export default": {
+		"prefix": "ep",
+		"body": [
+			"export default {",
+				"\t$1",
+			"}"
+		]
+	}
 }

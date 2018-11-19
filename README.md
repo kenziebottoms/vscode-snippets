@@ -35,6 +35,11 @@
     return new Promise((resolve, reject) => {
     });
     ```
+- `ep`
+    ```js
+    export default {
+    }
+    ```
 
 #### Angular
 
@@ -101,6 +106,11 @@
     ```html
     <script>
     </script>
+    ```
+- `ep`
+    ```js
+    export default {
+    }
     ```
 
 ### Markdown
