@@ -1,0 +1,30 @@
+{
+    "workbench.startupEditor": "newUntitledFile",
+    "editor.fontFamily": "'Fira Code', Menlo, Monaco, 'Courier New', monospace",
+    "editor.fontLigatures": true,
+    "editor.fontSize": 16,
+    "editor.fontWeight": "400",
+    "window.zoomLevel": 0,
+    "files.exclude": {
+        "**/node_modules/": true,
+        "**/.java-version": true,
+        "**/.project": true,
+        "**/.classpath": true,
+        "**/.factorypath": true,
+        "target/": true,
+        ".settings/": true,
+        "awslogs.conf": true,
+    },
+	"[vue]": {
+        "editor.formatOnSave": true
+	},
+	"[javascript]": {
+        "editor.formatOnSave": true
+	},
+	"[json]": {
+        "editor.formatOnSave": true
+    },
+    "prettier.disableLanguages": ["vue"],
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.colorTheme": "Replicant"
+}
