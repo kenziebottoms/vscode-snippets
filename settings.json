@@ -14,6 +14,7 @@
         "target/": true,
         ".settings/": true,
         "awslogs.conf": true,
+        "**/.listing": true,
     },
 	"[vue]": {
         "editor.formatOnSave": true
@@ -23,6 +24,13 @@
 	},
 	"[json]": {
         "editor.formatOnSave": true
+    },
+	"[css]": {
+        "editor.formatOnSave": true,
+        "editor.tabSize": 4
+    },
+	"[scss]": {
+        "editor.tabSize": 4
     },
     "prettier.disableLanguages": ["vue"],
     "workbench.iconTheme": "material-icon-theme",
