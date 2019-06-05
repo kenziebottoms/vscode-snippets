@@ -4,8 +4,13 @@
 - [Javascript](#javascript)
   - [Angular](#angular)
   - [Node](#node)
+  - [Vue](#vue)
+  - [React](#react)
 - [Markdown](#markdown)
 - [Java](#java)
+- [PHP](#php)
+  - [WordPress](#wordpress)
+- [Global](#global)
 
 <!-- /TOC -->
 
@@ -113,6 +118,16 @@
     }
     ```
 
+#### React
+- `re`
+    ```js
+    import React from 'react';
+    ```
+- `ep`
+    ```js
+    export default #;
+    ```
+
 ### Markdown
 
 - `badge`
@@ -203,4 +218,26 @@
 - `pv`
     ```java
     public void 
+    ```
+
+### PHP
+
+#### WordPress
+
+- `db`
+    ```php
+    define( 'WP_DEBUG', true );
+    define( 'WP_DEBUG_LOG', true );
+    define( 'WP_DEBUG_DISPLAY', false )
+    ```
+
+### Global
+
+- `gitignore`
+    ```
+    **/node_modules/
+    **/.env
+    **/.vscode
+    **/.DS_Store
+    **/.listin
     ```

@@ -1,0 +1,18 @@
+{
+  "target=blank": {
+    "prefix": "tar",
+    "body": ["target='blank'"]
+  },
+  "Print to console": {
+    "prefix": "cl",
+    "body": ["console.log($1);"]
+  },
+  "Export default": {
+    "prefix": "ep",
+    "body": ["export default $1;"]
+  },
+  "Import React": {
+    "prefix": "re",
+    "body": ["import React from 'react';"]
+  }
+}

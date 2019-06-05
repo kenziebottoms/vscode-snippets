@@ -1,0 +1,11 @@
+{
+  "WP_DEBUG_LOG": {
+    "prefix": "db",
+    "body": [
+      "define( 'WP_DEBUG', true );",
+      "define( 'WP_DEBUG_LOG', true );",
+      "define( 'WP_DEBUG_DISPLAY', false );"
+    ],
+    "description": "Log output to console"
+  }
+}
