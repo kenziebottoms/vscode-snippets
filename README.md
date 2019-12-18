@@ -25,7 +25,7 @@
     box-sizing: border-box
     ```
 
-### Javascript
+### Javascript/Typescript
 
 - `cl`
     ```js
