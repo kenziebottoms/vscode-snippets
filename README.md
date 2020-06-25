@@ -10,6 +10,7 @@
 - [Java](#java)
 - [PHP](#php)
   - [WordPress](#wordpress)
+- [Elixir](#elixir)
 - [Global](#global)
 
 <!-- /TOC -->
@@ -19,10 +20,6 @@
 - `bb`
     ```css
     box-sizing: border-box;
-    ```
-    
-    ```sass
-    box-sizing: border-box
     ```
 
 ### Javascript/Typescript
@@ -229,6 +226,14 @@
     define( 'WP_DEBUG', true );
     define( 'WP_DEBUG_LOG', true );
     define( 'WP_DEBUG_DISPLAY', false )
+    ```
+
+### Elixir
+
+- `iex`
+    ```elixir
+    require IEx
+    IEx.pry()
     ```
 
 ### Global
