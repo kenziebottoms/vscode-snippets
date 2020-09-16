@@ -3,48 +3,6 @@
     "prefix": "cl",
     "body": ["console.log($1);"]
   },
-  "Angular router": {
-    "prefix": "router",
-    "body": [
-      "angular.module('${1:AppName}', ['ngRoute'])",
-      "\t.config(\\$routeProvider => {",
-      "\t\t\\$routeProvider",
-      "\t\t\t.when('${2:path}', {",
-      "\t\t\t\ttemplateUrl: '${3:partialPath}',",
-      "\t\t\t\tcontroller: '${4:ctrlPath}'",
-      "\t\t\t})",
-      "\t\t\t.otherwise('${5:otherwisePath}');",
-      "});"
-    ]
-  },
-  "Angular controller": {
-    "prefix": "ngController",
-    "body": [
-      "angular.module('${1:AppName}').controller('$2Ctrl', function(\\$scope) {",
-      "\t$3",
-      "});"
-    ]
-  },
-  "Angular factory": {
-    "prefix": "factory",
-    "body": [
-      "angular.module('${1:AppName}').factory('$2Factory', function(\\$q, \\$http) {",
-      "\t$3",
-      "});"
-    ]
-  },
-  "Use strict": {
-    "prefix": "use",
-    "body": ["'use strict';", "\n"]
-  },
-  "return $q": {
-    "prefix": "rq",
-    "body": ["return \\$q((resolve, reject) => {", "\t$1", "});"]
-  },
-  "Direct execution": {
-    "prefix": "dx",
-    "body": "#!/usr/bin/env node"
-  },
   "Try/catch": {
     "prefix": "tc",
     "body": [
@@ -55,17 +13,27 @@
       "}"
     ]
   },
-  "Process exit": {
-    "prefix": "pe",
-    "body": ["process.exit();"]
-  },
-  "Sqlite3": {
-    "prefix": "s3",
-    "body": ["sqlite3"]
-  },
   "return new Promise": {
     "prefix": "rp",
     "body": ["return new Promise((resolve, reject) => {", "\t$1", "});"]
+  },
+  "empty describe block": {
+    "prefix": "des",
+    "body": [
+      "describe('$1', () => {",
+      "\t$2",
+      "})"
+    ]
+  },
+  "describe block": {
+    "prefix": "di",
+    "body": [
+      "describe('$1', () => {",
+      "\tit('$2', () => {",
+      "\t\t$3",
+      "\t});",
+      "});"
+    ]
   },
   "nested describe block": {
     "prefix": "ddi",
@@ -79,38 +47,26 @@
       "});"
     ]
   },
-  "describe block": {
-    "prefix": "di",
+  "it each": {
+    "prefix": "each",
     "body": [
-      "describe('$1', () => {",
-      "\tit('$2', () => {",
-      "\t\t$3",
-      "\t});",
-      "});"
+      "it.each([",
+      "\t['$1', $2],",
+      "])('%s', (name, $3) => {",
+      "\t$4",
+      "})"
     ]
   },
   "it block": {
     "prefix": "it",
     "body": ["it('$1', () => {", "\t$2", "});"]
   },
-  "require chai": {
-    "prefix": "ch",
-    "body": ["const { assert } = require('chai');\n"]
-  },
-  "require sqlite3": {
-    "prefix": "rs",
-    "body": ["const sqlite3 = require('sqlite3').verbose();\n"]
-  },
-  "new sqlite3 database": {
-    "prefix": "ns",
-    "body": ["const db = new sqlite3.Database('$1.sqlite');"]
-  },
-  "Export default": {
+  "Export": {
     "prefix": "ep",
-    "body": ["export default {", "\t$1", "}"]
+    "body": ["export "]
   },
   "target=blank": {
     "prefix": "tar",
-    "body": ["target='blank'"]
+    "body": ["target='_blank'"]
   }
 }

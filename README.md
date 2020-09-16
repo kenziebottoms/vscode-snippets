@@ -2,10 +2,8 @@
 
 - [CSS/SCSS/SASS](#cssscsssass)
 - [Javascript](#javascript)
-  - [Angular](#angular)
-  - [Node](#node)
-  - [Vue](#vue)
   - [React](#react)
+  - [Jest](#jest)
 - [Markdown](#markdown)
 - [Java](#java)
 - [PHP](#php)
@@ -28,9 +26,12 @@
     ```js
     console.log(#);
     ```
-- `use`
+- `tc`
     ```js
-    'use strict;'
+    try {
+    } catch(err) {
+        console.log('Error', err);
+    }
     ```
 - `rp`
     ```js
@@ -39,48 +40,21 @@
     ```
 - `ep`
     ```js
-    export default {
-    }
+    export
     ```
 
-#### Angular
-
-- `rq`
+#### React
+- `re`
     ```js
-    return $q((resolve, reject) => {
-    });
-
-- `factory`
-    ```js
-    angular.module('#').factory('#Factory', function($q, $http) {
-    });
-    ```
-- `ngController`
-    ```js
-    angular.module('#').controller('#Ctrl', function($scope) {
-    });
-    ```
-- `router` (`ngRoute`)
-    ```js
-    angular.module('#', ['ngRoute'])
-        .config($routeProvider => {
-            $routeProvider
-                .when('#', {
-                    templateUrl: '#',
-                    controller: '#'
-                })
-                .otherwise('#');
-    });
+    import React from 'react';
     ```
 
-#### Node
-- `dx`
+#### Jest
+
+- `des`
     ```js
-    #!/usr/bin/env node
-    ```
-- `pe`
-    ```js
-    process.exit();
+    describe('#', () => {
+    });
     ```
 - `di`
     ```js
@@ -98,31 +72,17 @@
         });
     });
     ```
-- `ch`
+- `each`
     ```js
-    const { assert } = require('chai');
+    it.each([
+      ['#', #],
+    ])('%s', (name, #) => {
+    })
     ```
-
-#### Vue
-- `sc`
-    ```html
-    <script>
-    </script>
-    ```
-- `ep`
+- `it`
     ```js
-    export default {
-    }
-    ```
-
-#### React
-- `re`
-    ```js
-    import React from 'react';
-    ```
-- `ep`
-    ```js
-    export default #;
+    it('#', () => {
+    });
     ```
 
 ### Markdown

@@ -1,15 +1,15 @@
 {
   "target=blank": {
     "prefix": "tar",
-    "body": ["target='blank'"]
+    "body": ["target='_blank'"]
   },
   "Print to console": {
     "prefix": "cl",
     "body": ["console.log($1);"]
   },
-  "Export default": {
+  "Export": {
     "prefix": "ep",
-    "body": ["export default $1;"]
+    "body": ["export "]
   },
   "Import React": {
     "prefix": "re",
