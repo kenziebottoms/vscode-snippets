@@ -2,37 +2,58 @@
     "workbench.startupEditor": "newUntitledFile",
     "editor.fontFamily": "'Fira Code', Menlo, Monaco, 'Courier New', monospace",
     "editor.fontLigatures": true,
-    "editor.fontSize": 16,
+    "editor.fontSize": 14,
     "editor.fontWeight": "400",
-    "window.zoomLevel": 0,
+    "editor.quickSuggestions": {
+        "keywords": false
+    },
+    "editor.tabCompletion": "onlySnippets",
+    "window.zoomLevel": 1,
+    "gitlens.currentLine.enabled": false,
+    "breadcrumbs.enabled": false,
+    "editor.minimap.enabled": false,
     "files.exclude": {
         "**/node_modules/": true,
+        "**/*.sql": true,
         "**/.java-version": true,
         "**/.project": true,
         "**/.classpath": true,
         "**/.factorypath": true,
-        "target/": true,
         ".settings/": true,
         "awslogs.conf": true,
         "**/.listing": true,
+        "**/.elixir_ls": true,
+        "**/bower_components": true,
+        "**/*.code-search": true,
+        "**/_build": true,
+        "**/__snapshots__": true
     },
-	"[vue]": {
-        "editor.formatOnSave": true
-	},
-	"[javascript]": {
-        "editor.formatOnSave": true
-	},
-	"[json]": {
-        "editor.formatOnSave": true
+    "search.exclude": {
+      "**/*.svg": true,
+      "**/*.html": true,
+      "**/*.map.*": true,
+      "**/*.patch": true,
+      "**/*.info": true,
+      "package.json": true,
+      "package-lock.json": true,
+      "public": true,
+      "dist": true,
+      "**/*.snap": true
     },
-	"[css]": {
-        "editor.formatOnSave": true,
-        "editor.tabSize": 4
+    "editor.codeActionsOnSave": {
+      "source.fixAll": true
     },
-	"[scss]": {
-        "editor.tabSize": 4
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+    "editor.tabSize": 2,
+    "[scss]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
-    "prettier.disableLanguages": ["vue"],
+    "[json]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[jsonc]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
     "workbench.iconTheme": "material-icon-theme",
-    "workbench.colorTheme": "Replicant"
+    "workbench.colorTheme": "Replicant",
 }
