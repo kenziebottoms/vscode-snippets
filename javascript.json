@@ -68,5 +68,12 @@
   "target=blank": {
     "prefix": "tar",
     "body": ["target='_blank'"]
+  },
+  "Error": {
+    "prefix": "err",
+    "body": [
+      "const error = new Error('$1')",
+      "error.response = {}"
+    ]
   }
 }

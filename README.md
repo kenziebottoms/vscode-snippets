@@ -42,6 +42,11 @@
     ```js
     export
     ```
+- `err`
+    ```js
+    const error = new Error('#')
+    error.response = {}
+    ```
 
 #### React
 - `re`
