@@ -35,7 +35,7 @@
       "**/*.patch": true,
       "**/*.info": true,
       "package.json": true,
-      "package-lock.json": true,
+      "**/*.lock": true,
       "public": true,
       "dist": true,
       "**/*.snap": true
