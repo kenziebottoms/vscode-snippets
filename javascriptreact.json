@@ -1,12 +1,4 @@
 {
-  "target=blank": {
-    "prefix": "tar",
-    "body": ["target='_blank'"]
-  },
-  "Print to console": {
-    "prefix": "cl",
-    "body": ["console.log($1);"]
-  },
   "Export": {
     "prefix": "ep",
     "body": ["export "]
@@ -14,5 +6,11 @@
   "Import React": {
     "prefix": "re",
     "body": ["import React from 'react';"]
+  },
+  "ESLint disable next line": {
+    "prefix": "esd",
+    "body": [
+      "// eslint-disable-next-line"
+    ]
   }
 }

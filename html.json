@@ -1,6 +1,0 @@
-{
-  "target=blank": {
-    "prefix": "tar",
-    "body": ["target='blank'"]
-  }
-}

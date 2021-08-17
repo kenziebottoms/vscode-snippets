@@ -1,22 +1,4 @@
 {
-  "Print to console": {
-    "prefix": "cl",
-    "body": ["console.log($1);"]
-  },
-  "Try/catch": {
-    "prefix": "tc",
-    "body": [
-      "try {",
-      "\t$1",
-      "} catch(err) {",
-      "\tconsole.log('Error', err);",
-      "}"
-    ]
-  },
-  "return new Promise": {
-    "prefix": "rp",
-    "body": ["return new Promise((resolve, reject) => {", "\t$1", "});"]
-  },
   "empty describe block": {
     "prefix": "des",
     "body": [
@@ -65,15 +47,17 @@
     "prefix": "ep",
     "body": ["export "]
   },
-  "target=blank": {
-    "prefix": "tar",
-    "body": ["target='_blank'"]
-  },
   "Error": {
     "prefix": "err",
     "body": [
       "const error = new Error('$1')",
       "error.response = {}"
+    ]
+  },
+  "ESLint disable next line": {
+    "prefix": "esd",
+    "body": [
+      "// eslint-disable-next-line"
     ]
   }
 }

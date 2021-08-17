@@ -14,4 +14,8 @@
     "prefix": "cl",
     "body": ["console.log($1);"]
   },
+  "target=blank": {
+    "prefix": "tar",
+    "body": ["target='_blank'"]
+  },
 }

@@ -5,7 +5,6 @@
   - [React](#react)
   - [Jest](#jest)
 - [Markdown](#markdown)
-- [Java](#java)
 - [PHP](#php)
   - [WordPress](#wordpress)
 - [Elixir](#elixir)
@@ -26,18 +25,6 @@
     ```js
     console.log(#);
     ```
-- `tc`
-    ```js
-    try {
-    } catch(err) {
-        console.log('Error', err);
-    }
-    ```
-- `rp`
-    ```js
-    return new Promise((resolve, reject) => {
-    });
-    ```
 - `ep`
     ```js
     export
@@ -46,6 +33,10 @@
     ```js
     const error = new Error('#')
     error.response = {}
+    ```
+- `esd`
+    ```js
+    // eslint-disable-next-line
     ```
 
 #### React
@@ -141,46 +132,6 @@
 
         ![](https://img.shields.io/badge/testing-chai+mocha-a40802.svg)
 
-### Java
-
-- `main`
-    ```java
-    public static void main(String[] args) {
-        #
-    }
-    ```
-
-- `out`
-    ```java
-    System.out.println(#);
-    ```
-
-- `bi`
-    ```java
-    BigInteger
-    ```
-
-- `mmtest`
-    ```java
-	@Test
-	public void test_#_expect#() throws Exception {
-	    mockMvc.perform(
-            #("/#")
-                .contentType(MediaType.APPLICATION_JSON_UTF8)
-		)
-            .andExpect(status().#());
-	}
-    ```
-
-- `psf`
-    ```java
-    public static final
-    ```
-
-- `pv`
-    ```java
-    public void 
-    ```
 
 ### PHP
 
