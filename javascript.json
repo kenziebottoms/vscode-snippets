@@ -43,21 +43,4 @@
     "prefix": "it",
     "body": ["it('$1', () => {", "\t$2", "});"]
   },
-  "Export": {
-    "prefix": "ep",
-    "body": ["export "]
-  },
-  "Error": {
-    "prefix": "err",
-    "body": [
-      "const error = new Error('$1')",
-      "error.response = {}"
-    ]
-  },
-  "ESLint disable next line": {
-    "prefix": "esd",
-    "body": [
-      "// eslint-disable-next-line"
-    ]
-  }
 }

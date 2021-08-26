@@ -1,16 +1,18 @@
 {
-  "Export": {
-    "prefix": "ep",
-    "body": ["export "]
-  },
   "Import React": {
     "prefix": "re",
     "body": ["import React from 'react';"]
   },
-  "ESLint disable next line": {
-    "prefix": "esd",
+  "useState": {
+    "prefix": "use",
+    "body": ["const [$1, $2] = useState($3)"]
+  },
+  "useEffect": {
+    "prefix": "eff",
     "body": [
-      "// eslint-disable-next-line"
+      "useEffect(() => {",
+      "  $1",
+      "}, [$2])"
     ]
   }
 }
