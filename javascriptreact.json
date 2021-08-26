@@ -1,17 +1,7 @@
 {
-  "Export": {
-    "prefix": "ep",
-    "body": ["export "]
-  },
   "Import React": {
     "prefix": "re",
     "body": ["import React from 'react';"]
-  },
-  "ESLint disable next line": {
-    "prefix": "esd",
-    "body": [
-      "// eslint-disable-next-line"
-    ]
   },
   "useState": {
     "prefix": "use",

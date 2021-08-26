@@ -16,6 +16,16 @@
   },
   "target=blank": {
     "prefix": "tar",
-    "body": ["target='_blank'"]
+    "body": ["target='_blank' rel='noopener noreferrer'"]
+  },
+  "ESLint disable next line": {
+    "prefix": "esd",
+    "body": [
+      "// eslint-disable-next-line"
+    ]
+  },
+  "Export": {
+    "prefix": "ep",
+    "body": ["export "]
   },
 }
