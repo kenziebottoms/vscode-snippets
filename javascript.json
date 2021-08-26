@@ -1,11 +1,7 @@
 {
   "empty describe block": {
     "prefix": "des",
-    "body": [
-      "describe('$1', () => {",
-      "\t$2",
-      "})"
-    ]
+    "body": ["describe('$1', () => {", "\t$2", "})"]
   },
   "describe block": {
     "prefix": "di",
@@ -13,18 +9,6 @@
       "describe('$1', () => {",
       "\tit('$2', () => {",
       "\t\t$3",
-      "\t});",
-      "});"
-    ]
-  },
-  "nested describe block": {
-    "prefix": "ddi",
-    "body": [
-      "describe('$1', () => {",
-      "\tdescribe('$2', () => {",
-      "\t\tit('$3', () => {",
-      "\t\t\t$4",
-      "\t\t});",
       "\t});",
       "});"
     ]
@@ -44,13 +28,13 @@
     "body": ["it('$1', () => {", "\t$2", "});"]
   },
   "Export": {
-    "prefix": "ep",
+    "prefix": "ex",
     "body": ["export "]
   },
   "Error": {
     "prefix": "err",
     "body": [
-      "const error = new Error('$1')",
+      "const error = new Error('$1 server error')",
       "error.response = {}"
     ]
   },
@@ -58,6 +42,47 @@
     "prefix": "esd",
     "body": [
       "// eslint-disable-next-line"
+    ]
+  },
+  "Spawn provision": {
+    "prefix": "spawn",
+    "body": "[spawn.fn(errorHandler)],"
+  },
+  "Spawn matcher": {
+    "prefix": ".spawn",
+    "body": ".spawn(errorHandler, error)"
+  },
+  "Mock Date.now": {
+    "prefix": "md",
+    "body": [
+      "const oldDateNow = Date.now",
+      "beforeAll(() => {",
+      "\tDate.now = jest.fn(() => new Date('2020-01-01T12:00:00Z').getTime())",
+      "})",
+      "afterAll(() => {",
+      "\tDate.now = oldDateNow",
+      "})"
+    ]
+  },
+  "Cancel saga tests": {
+    "prefix": "canc",
+    "body": [
+      "it('can be cancelled', () => {",
+      "\tfunction * sagaCanceller () {",
+      "\t\tconst task = yield realFork($1, { payload$2 })",
+      "\t\tyield realCancel(task)",
+      "\t}",
+      "\tconst cancelSpy = jest.fn((task, next) => {",
+      "\t\texpect(isSagaTask(task)).toBe(true)",
+      "\t\texpect(task.meta.name).toBe('$1')",
+      "\t\treturn next()",
+      "\t})",
+      "\treturn expectSaga(sagaCanceller)",
+      "\t\t.provide({ cancel: cancelSpy })",
+      "\t\t.not.put.actionType(CONSTANTS.$3)",
+      "\t\t.put(wasCancelled())",
+      "\t\t.run()",
+      "})"
     ]
   }
 }

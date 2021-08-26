@@ -12,5 +12,17 @@
     "body": [
       "// eslint-disable-next-line"
     ]
+  },
+  "useState": {
+    "prefix": "use",
+    "body": ["const [$1, $2] = useState($3)"]
+  },
+  "useEffect": {
+    "prefix": "eff",
+    "body": [
+      "useEffect(() => {",
+      "  $1",
+      "}, [$2])"
+    ]
   }
 }
