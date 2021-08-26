@@ -1,7 +1,10 @@
 {
   "Import React": {
     "prefix": "re",
-    "body": ["import React from 'react';"]
+    "body": [
+      "import React from 'react'",
+      "import PropTypes from 'prop-types'"
+    ]
   },
   "useState": {
     "prefix": "use",
