@@ -1,59 +1,75 @@
 {
-    "workbench.startupEditor": "newUntitledFile",
-    "editor.fontFamily": "'Fira Code', Menlo, Monaco, 'Courier New', monospace",
-    "editor.fontLigatures": true,
-    "editor.fontSize": 14,
-    "editor.fontWeight": "400",
-    "editor.quickSuggestions": {
-        "keywords": false
-    },
-    "editor.tabCompletion": "onlySnippets",
-    "window.zoomLevel": 1,
-    "gitlens.currentLine.enabled": false,
-    "breadcrumbs.enabled": false,
-    "editor.minimap.enabled": false,
-    "files.exclude": {
-        "**/node_modules/": true,
-        "**/*.sql": true,
-        "**/.java-version": true,
-        "**/.project": true,
-        "**/.classpath": true,
-        "**/.factorypath": true,
-        ".settings/": true,
-        "awslogs.conf": true,
-        "**/.listing": true,
-        "**/.elixir_ls": true,
-        "**/bower_components": true,
-        "**/*.code-search": true,
-        "**/_build": true,
-        "**/__snapshots__": true
-    },
-    "search.exclude": {
-      "**/*.svg": true,
-      "**/*.html": true,
-      "**/*.map.*": true,
-      "**/*.patch": true,
-      "**/*.info": true,
-      "package.json": true,
-      "**/*.lock": true,
-      "public": true,
-      "dist": true,
-      "**/*.snap": true
-    },
-    "editor.codeActionsOnSave": {
-      "source.fixAll": true
-    },
-    "editor.defaultFormatter": "dbaeumer.vscode-eslint",
-    "editor.tabSize": 2,
-    "[scss]": {
-      "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[json]": {
-      "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[jsonc]": {
-      "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "workbench.iconTheme": "material-icon-theme",
-    "workbench.colorTheme": "Replicant",
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "breadcrumbs.enabled": false,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true
+  },
+  "editor.colorDecorators": false,
+  "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+  "editor.fontFamily": "'Fira Code', Menlo, Monaco, 'Courier New', monospace",
+  "editor.fontLigatures": true,
+  "editor.fontWeight": "400",
+  "editor.minimap.enabled": false,
+  "editor.quickSuggestions": {
+    "keywords": false
+  },
+  "editor.tabCompletion": "onlySnippets",
+  "editor.tabSize": 2,
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "extensions.ignoreRecommendations": true,
+  "files.exclude": {
+    "**/*.code-search": true,
+    "**/*.map": true,
+    "**/*.min.*": true,
+    "**/*.sql": true,
+    "**/.classpath": true,
+    "**/.elixir_ls": true,
+    "**/.factorypath": true,
+    "**/.java-version": true,
+    "**/.listing": true,
+    "**/.project": true,
+    "**/__snapshots__": true,
+    "**/_build": true,
+    "**/bower_components": true,
+    "**/node_modules/": true,
+    ".settings/": true,
+    "awslogs.conf": true
+  },
+  "gitlens.codeLens.enabled": false,
+  "gitlens.currentLine.enabled": false,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "search.exclude": {
+    "**/*.html": true,
+    "**/*.info": true,
+    "**/*.lock": true,
+    "**/*.map.*": true,
+    "**/*.patch": true,
+    "**/*.snap": true,
+    "**/*.svg": true,
+    "dist": true,
+    "package.json": true,
+    "public": true
+  },
+  "window.zoomLevel": 1,
+  "workbench.colorTheme": "Replicant",
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.startupEditor": "newUntitledFile"
 }
