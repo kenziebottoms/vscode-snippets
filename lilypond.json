@@ -1,0 +1,6 @@
+{
+	"Open hi hat": {
+		"prefix": "oh",
+		"body": ["openhihat"],
+	}
+}

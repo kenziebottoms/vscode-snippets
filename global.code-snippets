@@ -21,11 +21,19 @@
   "ESLint disable next line": {
     "prefix": "esd",
     "body": [
-      "// eslint-disable-next-line"
+      "/* eslint-disable-next-line */"
     ]
   },
   "Export": {
     "prefix": "ep",
     "body": ["export "]
   },
+  "Function": {
+    "prefix": "fn",
+    "body": "function "
+  },
+  "Jest Function": {
+    "prefix": "jf",
+    "body": "jest.fn()"
+  }
 }
