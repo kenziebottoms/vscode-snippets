@@ -11,7 +11,15 @@
   "[scss]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  "bracket-pair-colorizer-2.colors": [],
+  "bracket-pair-colorizer-2.scopeLineCSS": [
+    "borderStyle : solid",
+    "borderWidth : 2px",
+    "borderColor : {color}",
+    "opacity: 0.25"
+  ],
   "breadcrumbs.enabled": false,
+  "diffEditor.ignoreTrimWhitespace": false,
   "editor.codeActionsOnSave": {
     "source.fixAll": true
   },
@@ -22,10 +30,12 @@
   "editor.fontWeight": "400",
   "editor.minimap.enabled": false,
   "editor.quickSuggestions": {
+    "interface": false,
     "keywords": false
   },
   "editor.tabCompletion": "onlySnippets",
   "editor.tabSize": 2,
+  "emmet.showExpandedAbbreviation": "never",
   "eslint.validate": [
     "javascript",
     "javascriptreact",
@@ -51,10 +61,20 @@
     "**/bower_components": true,
     "**/node_modules/": true,
     ".settings/": true,
-    "awslogs.conf": true
+    "awslogs.conf": true,
+    "coverage": true
+  },
+  "gitlens.advanced.messages": {
+    "suppressCreatePullRequestPrompt": true
   },
   "gitlens.codeLens.enabled": false,
   "gitlens.currentLine.enabled": false,
+  "gitlens.hovers.currentLine.over": "line",
+  "gitlens.hovers.enabled": false,
+  "gitlens.sortBranchesBy": "name:asc",
+  "gitlens.statusBar.enabled": false,
+  "gitlens.views.branches.branches.layout": "list",
+  "gitlens.views.formats.commits.label": "${message}",
   "javascript.updateImportsOnFileMove.enabled": "always",
   "search.exclude": {
     "**/*.html": true,
@@ -64,7 +84,10 @@
     "**/*.patch": true,
     "**/*.snap": true,
     "**/*.svg": true,
+    "**/node_modules/": true,
+    "coverage": true,
     "dist": true,
+    "package-lock.json": true,
     "package.json": true,
     "public": true
   },
