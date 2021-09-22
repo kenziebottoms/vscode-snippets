@@ -17,18 +17,6 @@
       "});"
     ]
   },
-  "nested describe block": {
-    "prefix": "ddi",
-    "body": [
-      "describe('$1', () => {",
-      "\tdescribe('$2', () => {",
-      "\t\tit('$3', () => {",
-      "\t\t\t$4",
-      "\t\t});",
-      "\t});",
-      "});"
-    ]
-  },
   "it each": {
     "prefix": "each",
     "body": [
