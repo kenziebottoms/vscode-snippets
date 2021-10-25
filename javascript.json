@@ -38,6 +38,7 @@
   // work only
   "Error": {
     "prefix": "err",
+    "description": "New Error with response",
     "body": [
       "const error = new Error('$1 server error')",
       "error.response = {}"
@@ -45,14 +46,17 @@
   },
   "Spawn provision": {
     "prefix": "spawn",
+    "description": "Error handler spawn provision",
     "body": "[spawn.fn(errorHandler)],"
   },
   "Spawn matcher": {
     "prefix": ".spawn",
+    "description": "Error handler spawn assertion",
     "body": ".spawn(errorHandler, error)"
   },
   "Mock Date.now": {
     "prefix": "md",
+    "description": "Jest: Mock date.now",
     "body": [
       "const oldDateNow = Date.now",
       "beforeAll(() => {",
@@ -65,6 +69,7 @@
   },
   "Cancel saga tests": {
     "prefix": "canc",
+    "description": "Saga cancellation test",
     "body": [
       "it('can be cancelled', () => {",
       "\tfunction * sagaCanceller () {",
