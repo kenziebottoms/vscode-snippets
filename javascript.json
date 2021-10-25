@@ -1,6 +1,7 @@
 {
   "empty describe block": {
     "prefix": "des",
+    "description": "Jest: Empty describe block",
     "body": [
       "describe('$1', () => {",
       "\t$2",
@@ -9,6 +10,7 @@
   },
   "describe block": {
     "prefix": "di",
+    "description": "Jest: It block nested in describe block",
     "body": [
       "describe('$1', () => {",
       "\tit('$2', () => {",
@@ -19,6 +21,7 @@
   },
   "it each": {
     "prefix": "each",
+    "description": "Jest: It.each block",
     "body": [
       "it.each([",
       "\t['$1', $2],",
@@ -29,6 +32,7 @@
   },
   "it block": {
     "prefix": "it",
+    "description": "Jest: It block",
     "body": ["it('$1', () => {", "\t$2", "});"]
   },
 }

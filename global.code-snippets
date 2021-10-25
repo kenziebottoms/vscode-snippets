@@ -35,5 +35,9 @@
   "Jest Function": {
     "prefix": "jf",
     "body": "jest.fn()"
+  },
+  "expectedResult": {
+    "prefix": "er",
+    "body": "expectedResult"
   }
 }
