@@ -1,16 +1,4 @@
 {
-  "[css]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[json]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[jsonc]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[scss]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
   "bracket-pair-colorizer-2.colors": [],
   "bracket-pair-colorizer-2.scopeLineCSS": [
     "borderStyle : solid",
@@ -23,7 +11,6 @@
   "editor.codeActionsOnSave": {
     "source.fixAll": true
   },
-  "editor.colorDecorators": false,
   "editor.defaultFormatter": "dbaeumer.vscode-eslint",
   "editor.fontFamily": "'Fira Code', Menlo, Monaco, 'Courier New', monospace",
   "editor.fontLigatures": true,
@@ -36,14 +23,7 @@
   "editor.tabCompletion": "onlySnippets",
   "editor.tabSize": 2,
   "emmet.showExpandedAbbreviation": "never",
-  "eslint.validate": [
-    "javascript",
-    "javascriptreact",
-    "typescript",
-    "typescriptreact"
-  ],
   "explorer.confirmDelete": false,
-  "explorer.confirmDragAndDrop": false,
   "extensions.ignoreRecommendations": true,
   "files.exclude": {
     "**/*.code-search": true,
@@ -64,6 +44,7 @@
     "awslogs.conf": true,
     "coverage": true
   },
+  "git.autofetch": true,
   "gitlens.advanced.messages": {
     "suppressCreatePullRequestPrompt": true
   },
@@ -89,10 +70,26 @@
     "dist": true,
     "package-lock.json": true,
     "package.json": true,
-    "public": true
+    "public": true,
+    "report": true,
+    "__mocks__": true
   },
-  "window.zoomLevel": 1,
+  "todo.colors.types": {
+    "BUG": "#e180b8",
+    "FIX": "#e180b8",
+    "SUS": "#ffc999",
+    "TODO": "#0db39d"
+  },
+  "todo.embedded.exclude": [
+    "package*",
+    "node_modules",
+    "coverage",
+    "README.md",
+    "report",
+    "*.map"
+  ],
+  "todo.embedded.regex": "(?:<!-- *)?(?:#|// @|//|/\\*+|<!--|--|\\* @|\\{!|\\{\\{!--|\\{\\{!) *(TODO|FIXME|FIX|BUG|SUS|UGLY|HACK|NOTE|IDEA|REVIEW|DEBUG|OPTIMIZE)(?:\\s*\\([^)]+\\))?:?(?!\\w)(?: *-->| *\\*/| *!}| *--}}| *}}|(?= *(?:[^:]//|/\\*+|<!--|@|--|\\{!|\\{\\{!--|\\{\\{!))|((?: +[^\\n@]*?)(?= *(?:[^:]//|/\\*+|<!--|@|--(?!>)|\\{!|\\{\\{!--|\\{\\{!))|(?: +[^@\\n]+)?))",
+  "vsicons.dontShowNewVersionMessage": true,
   "workbench.colorTheme": "Replicant",
-  "workbench.iconTheme": "material-icon-theme",
   "workbench.startupEditor": "newUntitledFile"
 }
