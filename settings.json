@@ -1,26 +1,20 @@
 {
-  "bracket-pair-colorizer-2.colors": [],
-  "bracket-pair-colorizer-2.scopeLineCSS": [
-    "borderStyle : solid",
-    "borderWidth : 2px",
-    "borderColor : {color}",
-    "opacity: 0.25"
-  ],
-  "breadcrumbs.enabled": false,
-  "diffEditor.ignoreTrimWhitespace": false,
+  "editor.bracketPairColorization.enabled": false,
   "editor.codeActionsOnSave": {
-    "source.fixAll": true
+    "source.fixAll": "explicit"
   },
+  "markdown.preview.fontSize": 12,
   "editor.defaultFormatter": "dbaeumer.vscode-eslint",
   "editor.fontFamily": "'Fira Code', Menlo, Monaco, 'Courier New', monospace",
   "editor.fontLigatures": true,
   "editor.fontWeight": "400",
+  "editor.fontSize": 14,
   "editor.minimap.enabled": false,
   "editor.quickSuggestions": {
     "interface": false,
     "keywords": false
   },
-  "editor.tabCompletion": "onlySnippets",
+  "editor.snippetSuggestions": "top",
   "editor.tabSize": 2,
   "emmet.showExpandedAbbreviation": "never",
   "explorer.confirmDelete": false,
@@ -42,12 +36,24 @@
     "**/node_modules/": true,
     ".settings/": true,
     "awslogs.conf": true,
-    "coverage": true
+    "coverage": true,
+    "**/__mocks__": true,
+    "**/.idea": true,
+    "**/.mypy_cache": true,
+    "**/.pytest_cache": true,
+    "**/.parcel-cache": true
+  },
+  "files.associations": {
+    "*.js": "javascriptreact",
+    "*.test.js": "javascript",
+    "*.css": "tailwindcss",
+    "*.env*": "env"
   },
   "git.autofetch": true,
   "gitlens.advanced.messages": {
     "suppressCreatePullRequestPrompt": true
   },
+  "gitlens.autolinks": null,
   "gitlens.codeLens.enabled": false,
   "gitlens.currentLine.enabled": false,
   "gitlens.hovers.currentLine.over": "line",
@@ -57,8 +63,8 @@
   "gitlens.views.branches.branches.layout": "list",
   "gitlens.views.formats.commits.label": "${message}",
   "javascript.updateImportsOnFileMove.enabled": "always",
+  "javascript.preferences.importModuleSpecifier": "non-relative",
   "search.exclude": {
-    "**/*.html": true,
     "**/*.info": true,
     "**/*.lock": true,
     "**/*.map.*": true,
@@ -66,30 +72,67 @@
     "**/*.snap": true,
     "**/*.svg": true,
     "**/node_modules/": true,
-    "coverage": true,
-    "dist": true,
-    "package-lock.json": true,
-    "package.json": true,
-    "public": true,
-    "report": true,
-    "__mocks__": true
+    "**/coverage": true,
+    "**/dist": true,
+    "**/public": true,
+    "**/report": true,
+    "**/__mocks__": true,
+    "**/.terraform": true,
+    "**/.nginx.conf": true,
+    "**/.yarn": true,
+    "package-lock.json": true
   },
-  "todo.colors.types": {
-    "BUG": "#e180b8",
-    "FIX": "#e180b8",
-    "SUS": "#ffc999",
-    "TODO": "#0db39d"
-  },
-  "todo.embedded.exclude": [
-    "package*",
-    "node_modules",
-    "coverage",
-    "README.md",
-    "report",
-    "*.map"
-  ],
-  "todo.embedded.regex": "(?:<!-- *)?(?:#|// @|//|/\\*+|<!--|--|\\* @|\\{!|\\{\\{!--|\\{\\{!) *(TODO|FIXME|FIX|BUG|SUS|UGLY|HACK|NOTE|IDEA|REVIEW|DEBUG|OPTIMIZE)(?:\\s*\\([^)]+\\))?:?(?!\\w)(?: *-->| *\\*/| *!}| *--}}| *}}|(?= *(?:[^:]//|/\\*+|<!--|@|--|\\{!|\\{\\{!--|\\{\\{!))|((?: +[^\\n@]*?)(?= *(?:[^:]//|/\\*+|<!--|@|--(?!>)|\\{!|\\{\\{!--|\\{\\{!))|(?: +[^@\\n]+)?))",
-  "vsicons.dontShowNewVersionMessage": true,
   "workbench.colorTheme": "Replicant",
-  "workbench.startupEditor": "newUntitledFile"
+  "workbench.editor.wrapTabs": true,
+  "workbench.startupEditor": "newUntitledFile",
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "explorer.confirmDragAndDrop": false,
+  "git.confirmSync": false,
+  "git.mergeEditor": false,
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "gitlens.currentLine.pullRequests.enabled": false,
+  "gitlens.hovers.autolinks.enhanced": false,
+  "gitlens.hovers.pullRequests.enabled": false,
+  "gitlens.statusBar.pullRequests.enabled": false,
+  "gitlens.terminalLinks.enabled": false,
+  "gitlens.views.branches.pullRequests.enabled": false,
+  "gitlens.views.branches.pullRequests.showForBranches": false,
+  "gitlens.views.branches.pullRequests.showForCommits": false,
+  "gitlens.views.commits.pullRequests.enabled": false,
+  "gitlens.views.commits.pullRequests.showForBranches": false,
+  "gitlens.views.commits.pullRequests.showForCommits": false,
+  "gitlens.views.contributors.pullRequests.enabled": false,
+  "gitlens.views.contributors.pullRequests.showForCommits": false,
+  "gitlens.views.searchAndCompare.pullRequests.showForCommits": false,
+  "gitlens.views.searchAndCompare.pullRequests.enabled": false,
+  "gitlens.views.repositories.pullRequests.showForCommits": false,
+  "gitlens.views.repositories.pullRequests.showForBranches": false,
+  "gitlens.views.repositories.pullRequests.enabled": false,
+  "gitlens.views.remotes.pullRequests.showForCommits": false,
+  "gitlens.views.remotes.pullRequests.showForBranches": false,
+  "gitlens.views.remotes.pullRequests.enabled": false,
+  "workbench.editorAssociations": {
+    "git-rebase-todo": "gitlens.rebase"
+  },
+  "gitlens.hovers.autolinks.enabled": false,
+  "gitlens.views.commitDetails.autolinks.enabled": false,
+  "gitlens.views.commitDetails.autolinks.enhanced": false,
+  "git.openRepositoryInParentFolders": "always",
+  "window.commandCenter": false,
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "workbench.editor.empty.hint": "hidden",
+  "circleci.notifications.areActive": "yes",
+  "circleci.hostUrl": ""
 }
